@@ -1,0 +1,78 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: antiquewhite;
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+body {
+    overflow-x: hidden;
+    background: rgb(42, 41, 45);
+}
+#top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background: #ed3024;
+    display: flex;
+    overflow: hidden;
+}
+#calendar {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 130px);
+    left: 15px;
+    top: 115px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+#top .button {
+    margin: 15px;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0.0), rgb(0, 0, 0, 0.5));
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s, width 0.3s;
+}
+#top .button:hover {
+    transform: scale(1.01);
+}
+#add {
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    height: 50px;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    margin: 25px 0px 25px 25px;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;
+    transition: background 0.3s;
+}
+#add:hover {
+    background: antiquewhite;
+    color: rgb(42, 41, 45);
+}
+#date-title {
+    height: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.day {
+    background: rgb(250, 235, 215, 0.2);
+    border-radius: 0px;
+    padding: 0px 10px;
+}

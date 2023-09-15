@@ -1,0 +1,20 @@
+{
+    "name": "Badger Calendar",
+    "short_name": "Badger Calendar",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ed3024",
+    "theme_color": "#ed3024",
+    "scope": ".",
+    "description": "Badger Calendar, time management, scheduling, and more",
+    "icons":[
+      {
+      "src":"images/icon.png",					
+      "type":"image/png"
+      },
+      {
+      "src":"images/icon.png",
+      "type":"image/png"
+      }
+    ]
+  }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Badger Calendar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="Description" content="Badger Calendar: time management, scheduling, and more" />
+        <link rel="icon" href="images/icon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="manifest" href="manifest.json" id="manifest"/>
+    </head>
+    <body>
+        <div id="top">
+            <button class="button" id="month-title" onclick="location.reload();">Calendar</button>
+            <p id="date-title">Loading error...</p>
+            <button id="add">+ Add event</button>
+        </div>
+
+        <div id="calendar"></div>
+
+        <script src="install.js"></script>
+        <script src="script.js"></script>
+        </script>
+    </body>
+</html>
