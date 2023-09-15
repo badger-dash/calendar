@@ -2,6 +2,7 @@ var addBtn = document.getElementById("add");
 var monthBtn = document.getElementById("month-title");
 var dateBtn = document.getElementById("date-title");
 var calendar = document.getElementById("calendar");
+var manifest = document.getElementById("manifest");
 var currentDayBtn;
 
 const d = new Date();
@@ -69,3 +70,6 @@ for (let i = 1; i < 36; i++) {
 }
 
 currentDayBtn = document.getElementsByClassName("day")[timeData.whichDate - 1].style.background = "rgb(250, 235, 215, 0.4)";
+if (navigator.platform.toLowerCase().indexOf("mac") != -1) {
+    manifest.src = "mac-manifest.json";
+}
